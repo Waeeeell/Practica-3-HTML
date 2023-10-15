@@ -1,0 +1,32 @@
+/*1. color general de la lletra negra*/
+#container {       /* Seleccionem #container preque conté tot el text i es més específic (té més prioritat) que body*/
+    color: black;                                   
+}
+
+/*2. titol nivell 1 fons blanc lletra gris*/
+h1#titol-pagina {                /* etiqueta h1 + id principal h1  */ /*Seleccionem els h1 que al mateix temps tenen id=titol*/
+   background: white;
+   color: gray;
+}
+
+/*3. tots els strong en color verd i subratllats*/
+#container strong { /* id container + etiqueta strong per seleccionar tots els strongs*/
+    color: green;
+    text-decoration: underline;
+}
+
+/*4. enllaços del paràgraf2 en italica*/
+.paragraf2 a {   /* class paragraf + a per seleccionar tot el que está dins del parágraf a */
+    font-style: italic;
+}
+
+/*5. footer general del web centrat i lletra de 10px*/
+#container > footer {   /* id container > footer per seleccionar el footer que esta directament en el container, no en els childs*/
+    text-align: center;
+    font-size: 10px;                                             
+}
+
+/*6. Canvia l'ordre de càrrega dels fitxers i mira què passa. Sabries modificar el teu codi per a que se seguís veient igual que abans de canviar l'ordre?*/ 
+
+/* Tots els elements es veuen com hem definit nosaltres, ja que tenen més prioritat, de forma que l'ordre dels links no importa*/
+/* No hauriem de fer ningun canvi, ja que abans de canviar l'ordre, es veia de la mateixa forma que ara, ja que des del primer moment hem definit amb prioritat aquest fitxer*/
